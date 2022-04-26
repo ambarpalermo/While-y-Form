@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class button : MonoBehaviour
 {
+    public int num1;
+    public int num2;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +20,17 @@ public class button : MonoBehaviour
     }
     public void TocaAca()
     {
-        Debug.Log("Hola Mundo");
+        if (num1 >= num2 )
+        {
+            Debug.Log("Error, revisar los numeros ingresados");
+        }
+        else
+        {
+            while (num1 <= num2)
+            {
+                Debug.Log(num2);
+                num2--;
+            }
+        }
     }
 }
