@@ -20,7 +20,7 @@ public class button : MonoBehaviour
     }
     public void TocaAca()
     {
-        if (num1 >= num2 )
+        if (num2 >= num1 )
         {
             Debug.Log("Error, revisar los numeros ingresados");
         }
